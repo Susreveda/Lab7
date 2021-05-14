@@ -42,7 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
           );
         });
         num++;
-        document.querySelector("main").appendChild(newPost);
       });
     });
   setState({ page: "home" }, 0, false);
