@@ -23,6 +23,7 @@ if ("serviceWorker" in navigator) {
 }
 
 var num = 1;
+
 document.addEventListener("DOMContentLoaded", () => {
   fetch("https://cse110lab6.herokuapp.com/entries")
     .then((response) => response.json())
@@ -56,7 +57,7 @@ var topTitle = document.querySelector("header h1");
 topTitle.addEventListener("click", () => {
   setState({ page: "home" }, 0, false);
 });
- 
+
 window.addEventListener("popstate", (event) => {
   setState(event.state, 0, true);
 });
