@@ -5,4 +5,3 @@
 None.
 
 ## URL:
-https://susreveda.github.io/Lab7/
