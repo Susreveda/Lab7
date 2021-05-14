@@ -1,8 +1,8 @@
 # Lab7_Solution
 
-## Name of Lab Partner(s):
+## Name(s):
 
-None.
+Christian Lee
 
 ## URL:
 https://susreveda.github.io/Lab7/
