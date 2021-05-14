@@ -56,7 +56,7 @@ var topTitle = document.querySelector("header h1");
 topTitle.addEventListener("click", () => {
   setState({ page: "home" }, 0, false);
 });
-
+ 
 window.addEventListener("popstate", (event) => {
   setState(event.state, 0, true);
 });
