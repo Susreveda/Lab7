@@ -57,5 +57,9 @@ topTitle.addEventListener("click", () => {
 });
 
 window.addEventListener("popstate", (event) => {
-  setState(event.state, 0, true);
+  if (event.state == null) {
+    setState({ page: "home" }, 0, false);
+  } else {
+    setState(event.state, 0, true);
+  }
 });
