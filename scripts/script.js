@@ -44,7 +44,6 @@ document.addEventListener("DOMContentLoaded", () => {
         num++;
       });
     });
-  setState({ page: "home" }, 0, false);
 });
 
 var sett = document.querySelector("img");
