@@ -58,7 +58,7 @@ topTitle.addEventListener("click", () => {
 
 window.addEventListener("popstate", (event) => {
   if (event.state == null) {
-    setState({ page: "home" }, 0, false);
+    setState({ page: "home" }, 0, true);
   } else {
     setState(event.state, 0, true);
   }
