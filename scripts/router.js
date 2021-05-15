@@ -62,11 +62,12 @@ router.setState = function (whichState, whichNum, bool) {
     top.innerHTML = "Entry " + whichState.num;
 
     let journal = document.createElement("entry-page");
-    journal.entry = whichState.entry;
     let entryList = document.querySelectorAll("entry-page")[0];
 
-    body.appendChild(journal);
     body.removeChild(entryList);
+    body.appendChild(journal);
+
+    journal.entry = whichState.entry;
   } else if (whichState.page == "home") {
     if (!bool) {
       let state = whichState;
